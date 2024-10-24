@@ -11,6 +11,7 @@ app.config['MYSQL_USER'] = 'ewojezegha'
 app.config['MYSQL_PASSWORD'] = 'i6MqWUdwC1BOUu$Q'
 app.config['MYSQL_DB'] = 'crud'
 app.config['MYSQL_SSL_CA'] = './DigiCertGlobalRootCA.crt.pem'
+app.config['MYSQL_SSL_DISABLED'] = False
 app.config['MYSQL_PORT'] = 3306
 mysql = MySQL(app)
 
