@@ -10,8 +10,7 @@ app.config['MYSQL_HOST'] = 'flaskappserver.mysql.database.azure.com'
 app.config['MYSQL_USER'] = 'ewojezegha'
 app.config['MYSQL_PASSWORD'] = 'i6MqWUdwC1BOUu$Q'
 app.config['MYSQL_DB'] = 'crud'
-app.config['ssl_ca']="./DigiCertGlobalRootCA.crt.pem"
-app.config['ssl_disabled']= False
+app.config['MYSQL_SSL_CA'] = './DigiCertGlobalRootCA.crt.pem'
 mysql = MySQL(app)
 
 @app.route('/')
