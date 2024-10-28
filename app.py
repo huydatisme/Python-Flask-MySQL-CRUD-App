@@ -9,7 +9,7 @@ app.secret_key = 'many random bytes'
 app.config['MYSQL_HOST'] = 'flaskapp-server.mysql.database.azure.com'
 app.config['MYSQL_USER'] = 'rhouxwstcr'
 app.config['MYSQL_PASSWORD'] = 'Y1hp3$XOwfqGTvsb'
-app.config['MYSQL_DB'] = 'crud'
+app.config['MYSQL_DB'] = 'flaskapp_db'
 app.config['MYSQL_PORT'] = 3306
 mysql = MySQL(app)
 
