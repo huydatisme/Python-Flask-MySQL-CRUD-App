@@ -17,7 +17,7 @@ resource "azurerm_service_plan" "app_plan1000" {
   sku_name = var.service_sku_name
 }
 
-resource "azurerm_linux_web_app" "flaskapp" {
+resource "azurerm_linux_web_app" "flask_app" {
   name                = var.azurerm_app_service_name
   resource_group_name = azurerm_resource_group.flask_app.name
   location            = azurerm_resource_group.flask_app.location
@@ -39,8 +39,8 @@ resource "azurerm_source_control_token" "github" {
   token = var.github_token
 }
 
-resource "azurerm_app_service_source_control" "flaskapp" {
-  app_id   = azurerm_linux_web_app.flaskapp.id
+resource "azurerm_app_service_source_control" "flask_app" {
+  app_id   = azurerm_linux_web_app.flask_app.id
   repo_url = var.repo_url
   branch   = var.branch
   github_action_configuration {
